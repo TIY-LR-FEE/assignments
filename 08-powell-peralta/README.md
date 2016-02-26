@@ -1,4 +1,4 @@
-In the first week, we build two complete site layouts. This assignment is going to revisit the fundamental skills required to lay out a complete page, but also require you to use your new knowledge of Sass and responsive design.
+In the first week, we built two complex site layouts. This assignment is going to revisit the fundamental skills needed to lay out a complete page, but also require you to use your new knowledge of Sass and responsive design.
 
 After completing this assignment, you should now:
 * Be able to create a responsive page layout from scratch
@@ -9,8 +9,6 @@ After completing this assignment, you should now:
 You should also be able to effectively use:
 * node-sass
 * `@media` queries
-
-![Powell Peralta](assets/powell_peralta.jpg)
 
 ## What to Submit
 1. A link to your GitHub repo containing:
@@ -24,7 +22,7 @@ You should also be able to effectively use:
 
 ## Explorer Mode
 
-1. [Download the image assets](![](https://raw.githubusercontent.com/TIY-LR-FEE/assignments/master/08-powell-peralta/assets.zip) and unzip them in your project directory. You don't need to keep them in the directory structure in here. You can just drop them in your `images` folder if you want.
+1. [Download the image assets](https://raw.githubusercontent.com/TIY-LR-FEE/assignments/master/08-powell-peralta/assets.zip) and unzip them in your project directory. You don't need to keep them in the directory structure in here. You can just drop them in your `images` folder if you want.
 
 2. Recreate the following layout in HTML and CSS. Once complete, make your design adaptive so that it looks good and is usable on a phone in portrait mode (iPhone 6 in Chrome Dev Tools) as well as on a desktop.
 
@@ -39,9 +37,9 @@ You should also be able to effectively use:
 
 Get fluid! Revisit the responsiveness of your site by making it work for the following:
 
-1. Phones in portrait mode (min-width 320)
-2. Tables in portrait mode (min-width 641)
-3. Desktops (min-width 1025)
+1. Phones in portrait mode (`min-width 320`)
+2. Tables in portrait mode (`min-width 641`)
+3. Desktops (`min-width 1025`)
 
 Use relative sizing when possible to try and decrease the visual "gaps" between these sizes.
 
@@ -49,11 +47,11 @@ Use relative sizing when possible to try and decrease the visual "gaps" between 
 
 People use the web on an incredible wide variety of platforms. While it's impossible to target everything, we often want a fairly fine level of granularity. Change your site so that it's usable and attractive for the following:
 
-1. Phones in portrait orientation (min-width 320)
-2. Phones in landscape orientation (min-width 481)
-3. Tablets in portrait orientation (min-width 641)
-4. Tablets in landscape orientation (min-width 961)
-5. Desktop browsers (min-width 1025)
+1. Phones in portrait orientation (`min-width 320`)
+2. Phones in landscape orientation (`min-width 481`)
+3. Tablets in portrait orientation (`min-width 641`)
+4. Tablets in landscape orientation (`min-width 961`)
+5. Desktop browsers (`min-width 1025`)
 
 Think about image sizing and maximizing your space. Some of these points will have very few structural changes, but may be able to either make things bigger or show more in a row.
 
