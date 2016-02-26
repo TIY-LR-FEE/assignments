@@ -20,7 +20,7 @@ You should also be able to effectively use:
 
 1. Use your knowledge of HTML forms to recreate the layout below:
 
-![](https://raw.githubusercontent.com/TIY-LR-FEE/assignments/master/06-forms/forms.gif)
+  ![](https://raw.githubusercontent.com/TIY-LR-FEE/assignments/master/06-forms/forms.gif)
 
 2. Use pseudo selectors, animations and anything else required to recreate the visual appearance of the layout.
 

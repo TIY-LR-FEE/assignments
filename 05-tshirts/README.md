@@ -26,7 +26,7 @@ You should also be able to effectively use:
 
 2. Recreate the layout in the following image. Don't worry about creating the submenu or the shirt rotation. Some of the "buttons" will really just be text or colored `div`s.
 
-![](https://raw.githubusercontent.com/TIY-LR-FEE/assignments/master/05-tshirts/tshirts.gif)
+  ![](https://raw.githubusercontent.com/TIY-LR-FEE/assignments/master/05-tshirts/tshirts.gif)
 
 3. Use the CSS `transition` property to animate the buttons. Hint: you should probably be using `transition` to change `background-image` on the ones with images. Make sure you handle the hover state both the bottom row buttons **and** the "rotate" button in the top right.
 

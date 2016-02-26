@@ -19,7 +19,7 @@ After completing this assignment, you should now:
 
 1. Recreate the following layout in HTML and CSS:
 
-![](https://raw.githubusercontent.com/TIY-LR-FEE/assignments/master/07-timeline/timeline.png))
+  ![](https://raw.githubusercontent.com/TIY-LR-FEE/assignments/master/07-timeline/timeline.png)
 
 2. Push your code to GitHub in a repo called 07-timeline.
 
