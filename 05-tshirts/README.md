@@ -20,7 +20,7 @@ You should also be able to effectively use:
   * If no, briefly explain why not.
   * If yes, how far past Explorer did you get?  
 
-## Explorer module
+## Explorer Mode
 
 1. [Download the image assets](https://raw.githubusercontent.com/TIY-LR-FEE/assignments/master/05-tshirts/assets.zip) and unzip them in your project directory. You don't need to keep the directory structure in here. You can just drop them in your `images` folder if you want.
 
