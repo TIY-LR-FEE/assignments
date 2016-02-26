@@ -39,3 +39,7 @@ Re-create the submenus and their transition effects. You'll find a single shirt 
 ## Epic Mode
 
 Add the shirt rotation effect when they hover over the rotate button. This shouldn't just fade between the images, but appear to rotate between them just like the example gif.
+
+This effect requires some more advanced knowledge of `transition`. To get an idea of how to achieve the effect, read [this article](https://davidwalsh.name/css-flip), but don't just copy his code. Read how he's making it work, and use those properties to achieve the same with your code.
+
+> Hint! It's all about `perspective`, `backface-visibility` and `transform-style`. The rest is basically the same as normal.
