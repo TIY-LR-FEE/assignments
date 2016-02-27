@@ -14,6 +14,7 @@ You should also be able to effectively use:
 1. A link to your GitHub repo containing `rovarspraket.js`
 2. Notes:
   * Your confidence level for this assignment from 0 to 5. (0 is no confidence, 5 is master)
+
 	* Which function was the hardest to complete? Was it the amount of unknown JavaScript that made it hard, or the logic required to complete the task?
 
 ## Explorer Mode
