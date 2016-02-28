@@ -71,6 +71,28 @@ function emptySpotsLeft(state) {
 }
 
 /**
+ * We need a function to validate player moves.
+ *
+ * The obvious thing to validate is input. If they
+ * put in anything but 1, 2 or 3 for row or column,
+ * we need to reject it.
+ *
+ * We also need to validate that the space is
+ * available. We can do that by converting their
+ * input into positions in our array. Since arrays
+ * are zero indexed, we know that we actually need
+ * state[row - 1][column - 1], so if they want
+ * to put something in 1 2 we check state[0][1]
+ *
+ * Define a function below that can take the current
+ * board state and an object representing the
+ * player's move and validate it.
+ */
+
+function validateMove(state, move) {
+  // YOUR CODE HERE
+}
+/**
  * We need a function to ask a user for their move.
  * This is more complicated than the Guess a Number
  * version because we need to know *which* player
@@ -88,9 +110,20 @@ function emptySpotsLeft(state) {
  * to the second question. To choose the bottom
  * right spot, I would answer 3 to the first
  * question and 3 to the second question.
+ *
+ * Then, we need to call our validateMove method
+ * on our move to make sure it's something we can
+ * actually do.
+ *
+ * Then, we should return an object with the
+ * keys row and column set to their answers.
+ *
+ * NOTE! Their answers will be strings, but
+ * we want to convert them to Integer before
+ * we return or validate them.
  */
 
-function getPlayerMove(player) {
+function getPlayerMove(state, player) {
 	// DISPLAY CURRENT PLAYER NAME AND LETTER
 
   // ASK WHAT ROW THEY WANT
@@ -98,27 +131,7 @@ function getPlayerMove(player) {
   // ASK WHAT COLUMN THEY WANT
 }
 
-/**
- * We need a function to validate player moves.
- *
- * The obvious thing to validate is input. If they
- * put in anything but 1, 2 or 3 for row or column,
- * we need to reject it.
- *
- * We also need to validate that the space is
- * available. We can do that by converting their
- * input into positions in our array. Since arrays
- * are zero indexed, we know that we actually need
- * state[row - 1][column - 1], so if they want
- * to put something in 1 2 we check state[0][1]
- *
- * Define a function below that can take an object
- * representing the player's move and validate it.
- */
 
-function validateMove(move) {
-  // YOUR CODE HERE
-}
 
 /**
  * One of the hardest things we have to determine
