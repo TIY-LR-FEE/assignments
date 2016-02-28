@@ -1,8 +1,8 @@
 This assignment demonstrates your knowledge of npm, flow control and general JavaScript.
 
 After completing this assignment, you should now:
-* Understand how to create a package.json from scratch
 * Be comfortable installing new packages with npm
+* Understanding flow control
 
 You should also be able to effectively use:
 * while loops
@@ -14,7 +14,9 @@ You should also be able to effectively use:
   * `package.json`
 2. Notes:
   * Your confidence level for this assignment from 0 to 5. (0 is no confidence, 5 is master)
-	* What was more difficult: the actual logic to create the number game, or having to start from nothing and figure out what functions needed to exist?
+  * Did you complete at least "Explorer Mode"?
+  * If no, briefly explain why not.
+  * If yes, how far past Explorer did you get? 
 
 ## Explorer Mode
 
