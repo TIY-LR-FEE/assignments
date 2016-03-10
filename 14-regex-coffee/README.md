@@ -20,7 +20,7 @@ You should also be able to effectively use:
 
 ## Explorer Mode
 
-1. Create a new project in Source Tree called `14-regex-coffee`, then download [regex.js](https://raw.githubusercontent.com/TIY-LR-FEE/assignments/master/14-regex-coffee/regex.js).
+1. Create a new project in Source Tree called `14-regex-coffee`, then download [regex.js](https://raw.githubusercontent.com/TIY-LR-FEE/assignments/master/14-regex-coffee/regex.js) and place it in your project.
 
 2. Fill in the regular expressions in `regex.js` to make all of the tests pass.
 
