@@ -50,5 +50,5 @@ Make your time to read function take two parameters: a selector representing the
 
 ## Additional Resources
 
-* Read [MDN Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+* [MDN Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
 * [MDN DOM Methods](https://developer.mozilla.org/en-US/docs/Web/API/Document#Methods)
