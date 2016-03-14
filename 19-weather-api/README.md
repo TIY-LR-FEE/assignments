@@ -24,19 +24,19 @@ You should also be able to effectively use:
 
 1. Create a new project in Source Tree called `19-weather-app`, then download the [Sass Boilerplate](https://github.com/TIY-LR-FEE/curriculum/raw/master/Boilerplates/sass.zip) and put those files in your project.
 
-- You'll need to register an account to get an API key from  [forecast.io](https://developer.forecast.io/).
+2. You'll need to register an account to get an API key from  [forecast.io](https://developer.forecast.io/).
 
-- Recreate the following layout in HTML and CSS:
+3. Recreate the following layout in HTML and CSS:
   ![](https://raw.githubusercontent.com/TIY-LR-FEE/assignments/master/19-weather-api/weather.png)
 
-- Use `navigator.geolocation` to get the user's latitude and longitude. You can [read more about that at MDN](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation).
+4. Use `navigator.geolocation` to get the user's latitude and longitude. You can [read more about that at MDN](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation).
 
-- Make an API call to forecast.io with that latitude and longitude, as well as your API key in the format:
+5. Make an API call to forecast.io with that latitude and longitude, as well as your API key in the format:
   - `https://api.forecast.io/forecast/<api key>/<latitude>,<longitude>`
 
-- Use the data from the API to display their location, current weather, and the next 7 days of information just like the mockup.
+6. Use the data from the API to display their location, current weather, and the next 7 days of information just like the mockup.
 
-- Use [Climacons](http://adamwhitcroft.com/climacons/) for the weather icons. You'll have to download the files and put them in your images directory. Set an icon for each of the following `icon` possibilities:
+7. Use [Climacons](http://adamwhitcroft.com/climacons/) for the weather icons. You'll have to download the files and put them in your images directory. Set an icon for each of the following `icon` possibilities:
   * clear-day
   * clear-night
   * rain
@@ -52,13 +52,13 @@ You should also be able to effectively use:
 
 1. Under the current weather, add two buttons: Hourly and Weekly
 
-- When the Weekly button is clicked, the information from Explorer Mode should be displayed below the buttons.
+2. When the Weekly button is clicked, the information from Explorer Mode should be displayed below the buttons.
 
-- When the Hourly button is clicked, instead display an hour by hour forecast for the current day. This information is in the API call you made in Explorer Mode. Visually, it should look similar to Weekly mode, except with hours instead of days of the week.
+3. When the Hourly button is clicked, instead display an hour by hour forecast for the current day. This information is in the API call you made in Explorer Mode. Visually, it should look similar to Weekly mode, except with hours instead of days of the week.
 
-- When the page first loads, automatically load the Hourly section.
+4. When the page first loads, automatically load the Hourly section.
 
-- Change the style of the button for the section they're currently on so that they know it's the current state.
+5. Change the style of the button for the section they're currently on so that they know it's the current state.
 
 ## Epic Mode
 
