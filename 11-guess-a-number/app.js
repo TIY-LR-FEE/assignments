@@ -1,23 +1,24 @@
 /**
  * We need to use an outside library to easily
- * get input from the user. We'll install it via npm
- * per the assignment directions, and then we'll need
- * to require it.
+ * get input from the user. I've already put it
+ * in your package.json, and startfrom installed it,
+ * but to actually use it, we need to import it.
  *
- * I've given this to you below. We're requiring the
- * npm package 'readline-sync' and capturing it as the
- * variable readlineSync so that we can use it later.
+ * I've given this to you below. We're importing the
+ * npm package 'readline-sync' and capturing it by the
+ * name readlineSync so that we can use it later.
  */
 
- var readlineSync = require('readline-sync');
+import readlineSync from 'readline-sync';
 
- /**
-  * When the game is complete, we need a way to generate
-	* random numbers. JavaScript can do this with the
-	* Math object.
-	*
-	* Fill in the function definition below.
-  */
+/**
+ * When the game is complete, we need a way to generate
+ * random numbers. JavaScript can do this with the
+ * Math object. Search MDN for Math and find the way
+ * to generate randomm numbers.
+ *
+ * Fill in the function definition below.
+ */
 
 function generateNumber() {
 	// YOUR CODE HERE
@@ -26,7 +27,7 @@ function generateNumber() {
 /**
  * We need a way to repeatedly ask for user input.
  * We can accomplish this with our readlineSync
- * variable that we set above.
+ * object that we imported above.
  *
  * To do this, call readlineSync.question(). That
  * function takes a single argument which is the
@@ -74,9 +75,9 @@ function runGame() {
 
 	// WHILE LOOP FOR WHEN GAME IS NOT WON
 
-		// GET USER INPUT
+	// GET USER INPUT
 
-		// COMPARE USER INPUT TO GENERATED NUMBER
+	// COMPARE USER INPUT TO GENERATED NUMBER
 
 	// CONGRATULATE THEM FOR WINNING
 }

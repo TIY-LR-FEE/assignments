@@ -9,28 +9,28 @@ You should also be able to effectively use:
 * conditional statements
 
 ## What to Submit
-1. A link to your GitHub repo containing:
-  * `guess.js`
-  * `package.json`
+1. A link to your GitHub repo containing your modified version of the boilerplate files.
 2. Notes:
   * Your confidence level for this assignment from 0 to 5. (0 is no confidence, 5 is master)
   * Did you complete at least "Explorer Mode"?
   * If no, briefly explain why not.
-  * If yes, how far past Explorer did you get? 
+  * If yes, how far past Explorer did you get?
 
 ## Explorer Mode
 
-We're going to create a number guessing game. When the user runs `node guess.js`, we'll generate a random number between 1-100, then ask them to guess it. If they guess it, we congratulate them and the game ends. If they're incorrect, we tell them they're incorrect, and then ask them again.
+We're going to create a number guessing game. When the user runs `npm start`, we'll generate a random number between 1-100, then ask them to guess it. If they guess it, we congratulate them and the game ends. If they're incorrect, we tell them they're incorrect, and then ask them again.
 
 To get started:
 
-1. [Download the starter files for this project] (https://raw.githubusercontent.com/TIY-LR-FEE/assignments/master/11-guess-a-number/assets.zip) and place them in your project directory.
+1. Create a new project via the command line called `11-guess-a-number`. If you don't remember how, [watch this video](https://www.youtube.com/watch?v=kyEuodzR-yE).
 
-2. Open your project directory in the terminal, then install `readline-sync` by running `npm install readline-sync --save`. This is an external library that allows us to easily get user input.
+2. In your `11-guess-a-number` directory run `startfrom tiy-lr-fee/assignments 11-guess-a-number` to download the boilerplate.
 
-3. Open `guess.js` and complete the functions. There are two shorter ones that do the core of the work, and one that acts as the glue to make the game run. Pay close attention to the instructions.
+3. Run `npm test`. You should see quite a number of tests fail.
 
-4. Run `node guess.js` to verify that your game works. When everything seems good, make sure to push your code to GitHub in a repo called 11-guess-a-number.
+4. Open `app.js` and complete the functions. There are two shorter ones that do the core of the work, and one that acts as the glue to make the game run. Pay close attention to the instructions. When you've correctly completed these functions, `npm test` should no longer show any failures.
+
+4. Run `npm start` to verify that your game works. When everything seems good, make sure to push your code to GitHub.
 
 ## Adventurer Mode
 
@@ -46,7 +46,7 @@ It should check for the following:
 
 If the guess violates any of these, it should return false. If the guess is valid, it should return true.
 
-Modify getUserGuess so that it runs validateGuess after calling readlineSync.question(). If validateGuess returns false, make getUserGuess return null. If validateGuess returns true, make getUserGuess return their guess. Changing invalid guesses to null will make sure they don't match our guessed number.
+Modify getUserGuess so that it runs `validateGuess` after calling `readlineSync.question()`. If `validateGuess` returns false, make `getUserGuess` return null. If `validateGuess` returns true, make `getUserGuess` return their guess. Changing invalid guesses to null will make sure they don't match our guessed number.
 
 ## Epic Mode
 
