@@ -72,3 +72,15 @@ export function reverse(str){
 export function findLongestWord(sentence){
     // YOUR CODE HERE
 }
+
+/**
+ * Part 6
+ *
+ * Write a function isPalindrome() that takes
+ * a string and returns true if it's a palindrome
+ * and false if it isn't.
+ */
+
+ export function isPalindrome(word) {
+   // YOUR CODE HERE
+ }

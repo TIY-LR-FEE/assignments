@@ -100,3 +100,19 @@ describe('Longest Word Function', () => {
 	});
 
 });
+
+describe('isPalindrome Function', () => {
+
+  it('Should return true for palindromes', (done) => {
+    expect(app.isPalindrome("tacocat")).to.equal(true);
+    expect(app.isPalindrome("racecar")).to.equal(true);
+		done();
+	});
+
+  it('Should return false for non-palindromes', (done) => {
+    expect(app.isPalindrome("banana")).to.equal(false);
+    expect(app.isPalindrome(0)).to.equal(false);
+		done();
+	});
+
+});

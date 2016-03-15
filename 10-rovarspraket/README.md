@@ -36,4 +36,10 @@ You should also be able to effectively use:
 
 ## Epic Mode
 
-Nothing yet!
+1. Add a new function called `flatZip` that accepts two arrays and returns a single array that contains the alternating values from each array. So, if it receives `['a', 'b', 'c']` and `[1, 2, 3]` the resulting array would be `['a', 1, 'b', 2, 'c', 3]`. If the arrays are different lengths, append the remaining items to the end of the array. Modify `test.js` to add additional tests to determine if the function works.
+
+> Note! You cannot use Array.prototype.zip in your function
+
+2. Write a new function called `duplicateLetters` that accepts a string that alternates letters and numbers like 'A1B6C3D9'. Create a new string that duplicates
+the given letters by the number after them. So that previous string would come out
+as 'ABBBBBBCCCDDDDDDDDD'. Modify `test.js` to add additional tests to determine if the function works.
