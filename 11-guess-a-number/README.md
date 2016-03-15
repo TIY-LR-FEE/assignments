@@ -26,7 +26,7 @@ To get started:
 
 2. In your `11-guess-a-number` directory run `startfrom tiy-lr-fee/assignments 11-guess-a-number` to download the boilerplate.
 
-3. Run `npm test`. You should see quite a number of tests fail.
+3. Run `npm test`. You should see a number of tests fail.
 
 4. Open `app.js` and complete the functions. There are two shorter ones that do the core of the work, and one that acts as the glue to make the game run. Pay close attention to the instructions. When you've correctly completed these functions, `npm test` should no longer show any failures.
 
@@ -48,6 +48,8 @@ If the guess violates any of these, it should return false. If the guess is vali
 
 Modify getUserGuess so that it runs `validateGuess` after calling `readlineSync.question()`. If `validateGuess` returns false, make `getUserGuess` return null. If `validateGuess` returns true, make `getUserGuess` return their guess. Changing invalid guesses to null will make sure they don't match our guessed number.
 
+Finally, modify `test.js` to add tests for your new function.
+
 ## Epic Mode
 
 Our game has one major flaw at the moment: it's impossible to lose. Add a life system. To do this, you'll need to do the following:
@@ -57,5 +59,7 @@ Our game has one major flaw at the moment: it's impossible to lose. Add a life s
 2. When they guess incorrectly, you'll need to reduce that variable by 1.
 
 3. When they run out of lives, you'll need to display a game over message and stop the while loop.
+
+4. You need to display their number of lives remaining when asking them for their next guess.
 
 > Hint! Instead of using "have they won?" for the while loop condition, you can use whether the number of lives they have left is > 0. Then, you can use your game state variable to determine the appropriate message once you're out of the while loop.

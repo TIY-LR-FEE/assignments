@@ -15,13 +15,16 @@ import readlineSync from 'readline-sync';
  * When the game is complete, we need a way to generate
  * random numbers. JavaScript can do this with the
  * Math object. Search MDN for Math and find the way
- * to generate randomm numbers.
+ * to generate randomm numbers. MDN has actual examples
+ * doing exactly what we're trying to do below.
  *
- * Fill in the function definition below.
+ * Fill in the function definition below. Make sure
+ * the number you're generating is an integer.
  */
 
-function generateNumber() {
-	// YOUR CODE HERE
+export function generateNumber() {
+  // YOUR CODE HERE
+  // BE SURE IT'S AN INTEGER OR YOU WILL BE SAD
 }
 
 /**
@@ -37,8 +40,22 @@ function generateNumber() {
  * for that library here: https://github.com/anseki/readline-sync
  */
 
-function getUserGuess() {
+export function getUserGuess() {
 	// YOUR CODE HERE
+}
+
+/**
+ * We need a way to validate their answer. Fill out
+ * the function below so that, when it's provided with
+ * the correct number and the user's guess, it returns
+ * true if it matches and false if it doesn't.
+ *
+ * If it's wrong, it should also log out a message
+ * telling them if their guess is too high or too low.
+ */
+
+export function isRightNumber(correctNumber, userGuess) {
+  // YOUR CODE HERE
 }
 
 /**
@@ -59,10 +76,10 @@ function getUserGuess() {
  *
  * 3: Use a while loop to determine if the game is still
  * going on. If it is, use getUserGuess to ask for a new
- * guess, then check to see if that guess is right. If
- * it isn't, log a message telling them it was wrong.
- * If it is, update your game state so that we know
- * they've won. This should cause the while loop to end.
+ * guess, then check to see if that guess is right with
+ * isRightNumber. If their guess is right, update your
+ * game state so that we know they've won. This should
+ * cause the while loop to end.
  *
  * 4: If they make it past the while loop, log a
  * congratulatory message for winning the game.
@@ -74,12 +91,6 @@ function runGame() {
 	// STORE INITIAL GAME STATE
 
 	// WHILE LOOP FOR WHEN GAME IS NOT WON
-
-	// GET USER INPUT
-
-	// COMPARE USER INPUT TO GENERATED NUMBER
-
-	// CONGRATULATE THEM FOR WINNING
 }
 
 /**
