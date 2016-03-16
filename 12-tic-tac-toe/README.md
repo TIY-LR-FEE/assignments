@@ -1,12 +1,12 @@
-This assignment demonstrates your knowledge of npm, flow control and general JavaScript.
+This assignment is the culmination of your existing JavaScript knowledge. We'll be using npm, complex flow control, objects and constructors to build a multiplayer game.
 
 After completing this assignment, you should now:
-* Be comfortable installing new packages with npm
-* Understanding flow control
+* Understand constructors and how to call them
 
 You should also be able to effectively use:
-* while loops
-* conditional statements
+* constructor functions
+* objects
+
 
 ## What to Submit
 1. A link to your GitHub repo containing your modified version of the boilerplate files.
@@ -18,48 +18,34 @@ You should also be able to effectively use:
 
 ## Explorer Mode
 
-We're going to create a number guessing game. When the user runs `npm start`, we'll generate a random number between 1-100, then ask them to guess it. If they guess it, we congratulate them and the game ends. If they're incorrect, we tell them they're incorrect, and then ask them again.
+We're going to build two player Tic Tac Toe. When the user runs `npm start`, we'll ask for both player's names. Then, we'll take turns asking them where they want to place their letter until someone wins or all spaces on the board are filled.
 
-To get started:
+1. Create a new project via the command line called `12-tic-tac-toe`. If you don't remember how, [watch this video](https://www.youtube.com/watch?v=kyEuodzR-yE).
 
-1. Create a new project via the command line called `11-guess-a-number`. If you don't remember how, [watch this video](https://www.youtube.com/watch?v=kyEuodzR-yE).
-
-2. In your `11-guess-a-number` directory run `startfrom tiy-lr-fee/assignments 11-guess-a-number` to download the boilerplate.
+2. In your `12-tic-tac-toe` directory run `startfrom tiy-lr-fee/assignments 12-tic-tac-toe` to download the boilerplate.
 
 3. Run `npm test`. You should see a number of tests fail.
 
-4. Open `app.js` and complete the functions. There are two shorter ones that do the core of the work, and one that acts as the glue to make the game run. Pay close attention to the instructions. When you've correctly completed these functions, `npm test` should no longer show any failures.
+4. Open `app.js` and complete the functions. There are a few shorter ones that do the core of the work, and one that acts as the glue to make the game run. Pay close attention to the instructions. When you've correctly completed these functions, `npm test` should no longer show any failures.
 
 4. Run `npm start` to verify that your game works. When everything seems good, make sure to push your code to GitHub.
 
 ## Adventurer Mode
 
-Users will always use your software in a way that you didn't intend. Add a new function called `validateGuess` that takes the user's guess as its only parameter.
+Replace the human Player 2 with an AI player.
 
-It should check for the following:
+Do this as follows:
 
-1. If they enter a number lower than 1 or greater than 100, it should tell them that their guess is out of range.
+1. Only create one Player and assign it to a variable. No need to track them in an array any more.
 
-2. If they enter something that isn't a number, it should tell them that it isn't a number.
+2. Change your code that determines the next player to simply toggle between the player and the computer.
 
-3. If they enter a number that isn't an integer, tell them that integers are required. The Number object in JavaScript can do this.
+3. Bundle your code to handle the Player's moves into a new function called `playerMove`. When it's the Player's turn, call this function.
 
-If the guess violates any of these, it should return false. If the guess is valid, it should return true.
-
-Modify getUserGuess so that it runs `validateGuess` after calling `readlineSync.question()`. If `validateGuess` returns false, make `getUserGuess` return null. If `validateGuess` returns true, make `getUserGuess` return their guess. Changing invalid guesses to null will make sure they don't match our guessed number.
-
-Finally, modify `test.js` to add tests for your new function.
+4. Create a new function called `computerMove`. When it's the computer's turn, call this. It should draw the board, then generate random combinations of rows and columns until it finds a valid move, then it should make that move. Check for a win / out of moves like normal after.
 
 ## Epic Mode
 
-Our game has one major flaw at the moment: it's impossible to lose. Add a life system. To do this, you'll need to do the following:
+Update `app.js` so that `computerMove` evaluates the state of the board and makes moves so that it never loses.
 
-1. When you store your initial state, you'll need to set a variable that holds their starting number of lives.
-
-2. When they guess incorrectly, you'll need to reduce that variable by 1.
-
-3. When they run out of lives, you'll need to display a game over message and stop the while loop.
-
-4. You need to display their number of lives remaining when asking them for their next guess.
-
-> Hint! Instead of using "have they won?" for the while loop condition, you can use whether the number of lives they have left is > 0. Then, you can use your game state variable to determine the appropriate message once you're out of the while loop.
+To understand how to never lose at Tic Tac Toe, check out [this Quora question](https://www.quora.com/Is-there-a-way-to-never-lose-at-Tic-Tac-Toe).

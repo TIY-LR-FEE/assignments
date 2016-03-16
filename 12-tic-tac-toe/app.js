@@ -66,7 +66,7 @@ function drawBoard(state) {
  * false.
  */
 
-function emptySpotsLeft(state) {
+export function emptySpotsLeft(state) {
 	// YOUR CODE HERE
 }
 
@@ -86,10 +86,11 @@ function emptySpotsLeft(state) {
  *
  * Define a function below that can take the current
  * board state and an object representing the
- * player's move and validate it.
+ * player's move and validate it by returning
+ * either true or false.
  */
 
-function validateMove(state, move) {
+export function validateMove(state, move) {
   // YOUR CODE HERE
 }
 /**
@@ -157,7 +158,7 @@ function getPlayerMove(state, player) {
  * false
  */
 
-function isGameWon(state) {
+export function isGameWon(state) {
   // CHECK FOR HORIZONTAL WINS ON EACH ROW
 
   // CHECK FOR VERTICAL WINS ON EACH COLUMN
