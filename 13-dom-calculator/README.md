@@ -11,7 +11,7 @@ You should also be able to effectively use:
 
 ## What to Submit
 
-1. A link to your GitHub repo containing `index.html` and `main.js`
+1. A link to your GitHub repo containing your modified version of the boilerplate files.
 2. Notes:
   * A link to the GitHub Pages URL for your repo.
   * Your confidence level for this assignment from 0 to 5. (0 is no confidence, 5 is master)
@@ -22,34 +22,17 @@ You should also be able to effectively use:
 
 ## Explorer Mode
 
-1. Create a new project in Source Tree called `13-dom-calculator`, then download the [Sass Boilerplate](https://github.com/TIY-LR-FEE/curriculum/raw/master/Boilerplates/sass.zip) and put those files in your project.
+1. Create a new project via the command line called `13-dom-calculator`. If you don't remember how, [watch this video](https://www.youtube.com/watch?v=kyEuodzR-yE).
 
-2. Create a `main.js` file and use a `script` tag to link it in your `index.html` file
+2. In your `13-dom-calculator` directory run `startfrom tiy-lr-fee/assignments 13-dom-calculator` to download the boilerplate.
 
-3. In `index.html`, create two text
-fields with the ids `numberOne` and
-`numberTwo`. Then, create a submit button for + with an id of `addNumbers`, - with
-an id of `subtractNumbers`, / with an id of
-`divideNumbers` and \* with an id of
-`multiplyNumbers`. Finally, add a `div`
-with an id of `answer` at the bottom.
+3. In `app/index.html`, create two text fields with the ids `numberOne` and `numberTwo`. Then, create a submit button for + with an id of `addNumbers`, - with an id of `subtractNumbers`, / with an id of `divideNumbers` and \* with an id of `multiplyNumbers`. Finally, add a `div` with an id of `answer` at the bottom.
 
-4. Using the DOM API, add a User Event to
-each button that calls a function and passes
-in the values of `numberOne` and `numberTwo`
-as the parameters. You'll have one function
-for each submit button.
+4. Using the DOM API, edit `app/app.js` to add a User Event to each button that calls a function and passes in the values of `numberOne` and `numberTwo` as the parameters. You'll have one function for each submit button.
 
-5. Fill out each function. They should do
-the appropriate math operation on the two
-numbers. You'll need to convert the values
-to a number (think `Number(value)`) in
-order to do this. Your result should show
-up in the `answer` div.
+5. Fill out each function. They should do the appropriate math operation on the two numbers. You'll need to convert the values to a number (think `Number(value)`) in order to do this. Your result should show up in the `answer` div.
 
-6. Style the project. It doesn't need to
-be gorgeous, but it shouldn't look like
-an unstyled trainwreck.
+6. Style the project. It doesn't need to be gorgeous, but it needs some real effort.
 
 ## Adventurer Mode
 
