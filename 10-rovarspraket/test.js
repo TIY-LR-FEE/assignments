@@ -15,16 +15,6 @@ describe('Max Function', () => {
 		done();
 	});
 
-  it('Should pick the number when presented with a number and a string', (done) => {
-    expect(app.max('aaa', 0)).to.equal(0);
-    done();
-  });
-
-  it('Should return NaN if provided with two things that aren\'t numbers', (done) => {
-    expect(isNaN(app.max('aaa', 'bbb')));
-    done();
-  });
-
 });
 
 describe('Max of Three Function', () => {
@@ -37,16 +27,6 @@ describe('Max of Three Function', () => {
     expect(app.maxOfThree(-1,-3,-10)).to.equal(-1);
 		done();
 	});
-
-  it('Should pick the largest number when presented with numbers and strings', (done) => {
-    expect(app.maxOfThree('aaa',0,1)).to.equal(1);
-    done();
-  });
-
-  it('Should return NaN if provided with three things that aren\'t numbers', (done) => {
-    expect(isNaN(app.maxOfThree('aaa','bbb','ccc')));
-    done();
-  });
 
 });
 
@@ -62,7 +42,6 @@ describe('isVowel Function', () => {
   it('Should return false for consonants and numbers', (done) => {
     expect(app.isVowel('B')).to.equal(false);
     expect(app.isVowel('b')).to.equal(false);
-    expect(app.isVowel(0)).to.equal(false);
 		done();
 	});
 
@@ -75,7 +54,6 @@ describe('Rovarspraket Function', () => {
     expect(app.rovarspraket('b')).to.equal('bob')
     expect(app.rovarspraket('cat')).to.equal('cocatot')
     expect(app.rovarspraket('javascript')).to.equal('jojavovasoscocroripoptot')
-    expect(app.rovarspraket(0)).to.equal('0')
 		done();
 	});
 
@@ -111,7 +89,6 @@ describe('isPalindrome Function', () => {
 
   it('Should return false for non-palindromes', (done) => {
     expect(app.isPalindrome("banana")).to.equal(false);
-    expect(app.isPalindrome(0)).to.equal(false);
 		done();
 	});
 
