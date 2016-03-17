@@ -13,18 +13,21 @@ You should also be able to effectively use:
 * `RegExp.prototype.test`
 
 ## What to Submit
-
-1. A link to your GitHub repo containing `regex.js`
+1. A link to your GitHub repo containing your modified version of the boilerplate files.
 2. Notes:
   * Your confidence level for this assignment from 0 to 5. (0 is no confidence, 5 is master)
 
 ## Explorer Mode
 
-1. Create a new project in Source Tree called `14-regex-coffee`, then download [regex.js](https://raw.githubusercontent.com/TIY-LR-FEE/assignments/master/14-regex-coffee/regex.js) and place it in your project.
+1. Create a new project via the command line called `14-regex-coffee`. If you don't remember how, [watch this video](https://www.youtube.com/watch?v=kyEuodzR-yE).
 
-2. Fill in the regular expressions in `regex.js` to make all of the tests pass.
+2. In your `14-regex-coffee` directory run `startfrom tiy-lr-fee/assignments 14-regex-coffee` to download the boilerplate.
 
-3. Verify that everything works by running `node regex.js`.
+3. Run `npm test`. You should see quite a number of tests fail.
+
+4. Open `app.js` in Atom and implement each regular expression. You'll see a section labeled `YOUR CODE HERE` in each one. After you complete one, you should always re-run `npm test` to verify that it passes all of the tests. If a test fails, look at how it's calling your regular expression to determine whats wrong.
+
+5. When running `npm test` returns only passing tests, push your final code to GitHub.
 
 ## Adventurer Mode
 
