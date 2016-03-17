@@ -58,30 +58,30 @@ describe('validateMove', () => {
 describe('isGameWon', () => {
 
   it('Should return X/O if game is won horizontally', (done) => {
-    expect(app.validateMove([['X', 'X', 'X'],[' ', ' ', ' '],[' ', ' ', ' ']])).to.equal('X');
-    expect(app.validateMove([[' ', ' ', ' '],['X', 'X', 'X'],[' ', ' ', ' ']])).to.equal('X');
-    expect(app.validateMove([[' ', ' ', ' '],[' ', ' ', ' '],['X', 'X', 'X']])).to.equal('X');
-    expect(app.validateMove([['O', 'O', 'O'],[' ', ' ', ' '],[' ', ' ', ' ']])).to.equal('O');
-    expect(app.validateMove([[' ', ' ', ' '],['O', 'O', 'O'],[' ', ' ', ' ']])).to.equal('O');
-    expect(app.validateMove([[' ', ' ', ' '],[' ', ' ', ' '],['O', 'O', 'O']])).to.equal('O');
+    expect(app.isGameWon([['X', 'X', 'X'],[' ', ' ', ' '],[' ', ' ', ' ']])).to.equal('X');
+    expect(app.isGameWon([[' ', ' ', ' '],['X', 'X', 'X'],[' ', ' ', ' ']])).to.equal('X');
+    expect(app.isGameWon([[' ', ' ', ' '],[' ', ' ', ' '],['X', 'X', 'X']])).to.equal('X');
+    expect(app.isGameWon([['O', 'O', 'O'],[' ', ' ', ' '],[' ', ' ', ' ']])).to.equal('O');
+    expect(app.isGameWon([[' ', ' ', ' '],['O', 'O', 'O'],[' ', ' ', ' ']])).to.equal('O');
+    expect(app.isGameWon([[' ', ' ', ' '],[' ', ' ', ' '],['O', 'O', 'O']])).to.equal('O');
 		done();
 	});
 
   it('Should return X/O if game is won vertically', (done) => {
-    expect(app.validateMove([['X', ' ', ' '],['X', ' ', ' '],['X', ' ', ' ']])).to.equal('X');
-    expect(app.validateMove([[' ', 'X', ' '],[' ', 'X', ' '],[' ', 'X', ' ']])).to.equal('X');
-    expect(app.validateMove([[' ', ' ', 'X'],[' ', ' ', 'X'],[' ', ' ', 'X']])).to.equal('X');
-    expect(app.validateMove([['O', ' ', ' '],['O', ' ', ' '],['O', ' ', ' ']])).to.equal('O');
-    expect(app.validateMove([[' ', 'O', ' '],[' ', 'O', ' '],[' ', 'O', ' ']])).to.equal('O');
-    expect(app.validateMove([[' ', ' ', 'O'],[' ', ' ', 'O'],[' ', ' ', 'O']])).to.equal('O');
+    expect(app.isGameWon([['X', ' ', ' '],['X', ' ', ' '],['X', ' ', ' ']])).to.equal('X');
+    expect(app.isGameWon([[' ', 'X', ' '],[' ', 'X', ' '],[' ', 'X', ' ']])).to.equal('X');
+    expect(app.isGameWon([[' ', ' ', 'X'],[' ', ' ', 'X'],[' ', ' ', 'X']])).to.equal('X');
+    expect(app.isGameWon([['O', ' ', ' '],['O', ' ', ' '],['O', ' ', ' ']])).to.equal('O');
+    expect(app.isGameWon([[' ', 'O', ' '],[' ', 'O', ' '],[' ', 'O', ' ']])).to.equal('O');
+    expect(app.isGameWon([[' ', ' ', 'O'],[' ', ' ', 'O'],[' ', ' ', 'O']])).to.equal('O');
 		done();
 	});
 
   it('Should return X/O if game is won diagonally', (done) => {
-    expect(app.validateMove([['X', ' ', ' '],[' ', 'X', ' '],[' ', ' ', 'X']])).to.equal('X');
-    expect(app.validateMove([[' ', ' ', 'X'],[' ', 'X', ' '],['X', ' ', ' ']])).to.equal('X');
-    expect(app.validateMove([['O', ' ', ' '],[' ', 'O', ' '],[' ', ' ', 'O']])).to.equal('O');
-    expect(app.validateMove([[' ', ' ', 'O'],[' ', 'O', ' '],['O', ' ', ' ']])).to.equal('O');
+    expect(app.isGameWon([['X', ' ', ' '],[' ', 'X', ' '],[' ', ' ', 'X']])).to.equal('X');
+    expect(app.isGameWon([[' ', ' ', 'X'],[' ', 'X', ' '],['X', ' ', ' ']])).to.equal('X');
+    expect(app.isGameWon([['O', ' ', ' '],[' ', 'O', ' '],[' ', ' ', 'O']])).to.equal('O');
+    expect(app.isGameWon([[' ', ' ', 'O'],[' ', 'O', ' '],['O', ' ', ' ']])).to.equal('O');
 		done();
 	});
 
