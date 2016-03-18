@@ -16,24 +16,27 @@ You should also be able to effectively use:
 
 ## What to Submit
 
-1. A link to your GitHub repo containing `index.html` and `main.js`
+1. A link to your GitHub repo containing your modified version of the boilerplate files.
 2. Notes:
   * A link to the GitHub Pages URL for your repo.
   * Your confidence level for this assignment from 0 to 5. (0 is no confidence, 5 is master)
-  * What was the hardest thing for you to place where you wanted it?
   * Did you complete at least "Explorer Mode"?
   * If no, briefly explain why not.
   * If yes, how far past Explorer did you get?  
 
 ## Explorer Mode
 
-1. Create a simple `index.html` page with an article. You can copy and paste one from another website, or just format several paragraphs worth of lorem ipsum.
+1. Create a new project via the command line called `15-time-to-read`. If you don't remember how, [watch this video](https://www.youtube.com/watch?v=kyEuodzR-yE).
 
-2. When viewing `index.html` in the browser, any user should be able to read the text "x minute read" where "x" is the time, in minutes, that it will take to read the article.
+2. In your `15-time-to-read` directory run `startfrom tiy-lr-fee/assignments 15-time-to-read` to download the boilerplate.
+
+3. Create a simple `index.html` page with an article. You can copy and paste one from another website, or just format several paragraphs worth of lorem ipsum. It doesn't need to be gorgeous, but it shouldn't be unstyled.
+
+4. When viewing `index.html` in the browser, any user should be able to read the text "x minute read" where "x" is the time, in minutes, that it will take to read the article.
   * The time to read text should be within an `h3` tag with class `.time-to-read`.
   * The average word per minute will be 230.
-  * The formula for calculating WPM is `"total words"/230`
-  * You will need to use native DOM selector methods such as `.querySelector() or .querySelectorAll()` or older methods like `.getElementById() or .getElementByClassName()`
+  * The formula for calculating WPM is `"total words" / 230`
+  * You will need to use native DOM selector methods such as `.querySelector() or .querySelectorAll()`
 
 ## Adventurer Mode
 

@@ -15,7 +15,6 @@ You should also be able to effectively use:
 2. Notes:
   * A link to the GitHub Pages URL for your repo.
   * Your confidence level for this assignment from 0 to 5. (0 is no confidence, 5 is master)
-  * What was the hardest thing for you to place where you wanted it?
   * Did you complete at least "Explorer Mode"?
   * If no, briefly explain why not.
   * If yes, how far past Explorer did you get?  
