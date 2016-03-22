@@ -15,23 +15,28 @@ You should also be able to effectively use:
 2. Notes:
   * A link to the GitHub Pages URL for your repo.
   * Your confidence level for this assignment from 0 to 5. (0 is no confidence, 5 is master)
+  * What was the hardest thing for you to place where you wanted it?
   * Did you complete at least "Explorer Mode"?
   * If no, briefly explain why not.
   * If yes, how far past Explorer did you get?  
 
 ## Explorer Mode
 
-1. Create a new project via the command line called `13-dom-calculator`. If you don't remember how, [watch this video](https://www.youtube.com/watch?v=kyEuodzR-yE).
+1. Create a new project via Source Tree called `13-dom-calculator`. If you don't remember how, [watch this video](https://www.youtube.com/watch?v=Mp3LYUVKoKU).
 
-2. In your `13-dom-calculator` directory run `startfrom tiy-lr-fee/assignments 13-dom-calculator` to download the boilerplate.
+2. Open your `13-dom-calculator` directory in the terminal, then run `startfrom tiy-lr-fee/assignments 13-dom-calculator` to download the boilerplate.
 
-3. In `app/index.html`, create two text fields with the ids `numberOne` and `numberTwo`. Then, create a submit button for + with an id of `addNumbers`, - with an id of `subtractNumbers`, / with an id of `divideNumbers` and \* with an id of `multiplyNumbers`. Finally, add a `div` with an id of `answer` at the bottom.
+3. Create a new branch in Source Tree for your development work. Do not work in master!
 
-4. Using the DOM API, edit `app/app.js` to add a User Event to each button that calls a function and passes in the values of `numberOne` and `numberTwo` as the parameters. You'll have one function for each submit button.
+4. In `app/index.html`, create two text fields with the ids `numberOne` and `numberTwo`. Then, create a submit button for + with an id of `addNumbers`, - with an id of `subtractNumbers`, / with an id of `divideNumbers` and \* with an id of `multiplyNumbers`. Finally, add a `div` with an id of `answer` at the bottom.
 
-5. Fill out each function. They should do the appropriate math operation on the two numbers. You'll need to convert the values to a number (think `Number(value)`) in order to do this. Your result should show up in the `answer` div.
+5. Using the DOM API, edit `app/app.js` to add a User Event to each button that calls a function and passes in the values of `numberOne` and `numberTwo` as the parameters. You'll have one function for each submit button.
 
-6. Style the project. It doesn't need to be gorgeous, but it needs some real effort.
+6. Fill out each function. They should do the appropriate math operation on the two numbers. You'll need to convert the values to a number (think `Number(value)`) in order to do this. Your result should show up in the `answer` div.
+
+7. Style the project. It doesn't need to be gorgeous, but it needs some real effort.
+
+8. Create a gh-pages branch and publish your code to GitHub. Keep in mind, your final files live in the dist folder, so you'll need to add /dist to the end of your GitHub pages URL to view it.
 
 ## Adventurer Mode
 

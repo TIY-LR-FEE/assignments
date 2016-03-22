@@ -26,7 +26,8 @@ You should also be able to effectively use:
 
 ## Explorer Mode
 
-1. Create a new project via the command line called `15-time-to-read`. If you don't remember how, [watch this video](https://www.youtube.com/watch?v=kyEuodzR-yE).
+
+1. Create a new project via Source Tree called `15-time-to-read`. If you don't remember how, [watch this video](https://www.youtube.com/watch?v=Mp3LYUVKoKU).
 
 2. In your `15-time-to-read` directory run `startfrom tiy-lr-fee/assignments 15-time-to-read` to download the boilerplate.
 
@@ -41,6 +42,10 @@ You should also be able to effectively use:
 ## Adventurer Mode
 
 In addition to the Explorer Mode requirements, make Words Per Minute configurable. So if I want to change the time to read calculation for really faster readers, the time to read will reflect closer to someone who may read 400wpm.
+
+Make a "reading speed" section at the top of the page. It should have four buttons: "Slow", "Normal", "Fast", "Genius". When the user clicks a button, it should immediately change the estimate for how long it will take to read.
+
+Slow should be 100wpm, Medium should be 230wpm, Fast should be 350wpm and Genius should be 500wpm.
 
 ## Epic Mode
 
