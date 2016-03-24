@@ -14,7 +14,7 @@ You also be able to effectively use:
 
 ## What to Submit
 
-1. A link to your GitHub repo containing `index.html`, `main.css` and `main.js`
+1. A link to your GitHub repo containing your modified version of the boilerplate files.
 2. Notes:
   * A link to the GitHub Pages URL for your repo.
   * Your confidence level for this assignment from 0 to 5. (0 is no confidence, 5 is master)
@@ -25,15 +25,17 @@ You also be able to effectively use:
 
 ## Explorer Mode
 
-1. Create a new project in Source Tree called `18-github-api`, then download the [Sass Boilerplate](https://github.com/TIY-LR-FEE/curriculum/raw/master/Boilerplates/sass.zip) and put those files in your project.
+1. Create a new project via Source Tree called `18-github-api`. If you don't remember how, [watch this video](https://www.youtube.com/watch?v=Mp3LYUVKoKU).
 
-- Recreate the HTML and CSS for the repository tab of the GitHub profile page (https://github.com/jbarket?tab=repositories).
+2. In your `18-github-api` directory run `startfrom tiy-lr-fee/assignments 18-github-api` to download the boilerplate.
 
-- Use two AJAX requests (and Promises) to pull your own profile information:
+3. Recreate the HTML and CSS for the repository tab of the GitHub profile page (https://github.com/jbarket?tab=repositories).
+
+4. Use two AJAX requests (and Promises) to pull your own profile information:
   * Profile: `https://api.github.com/users/<username>`
   * Repositories: `https://api.github.com/users/<username>/repos`
 
-- After loading the data from the GitHub API, write at least the following fields to the DOM:
+5. After loading the data from the GitHub API, write at least the following fields to the DOM:
   * name
   * blog
   * location
@@ -50,8 +52,8 @@ Create a `GithubClient` class that implements all the functionality from Explore
 var matt = new GithubClient('matthiasak')
 var jesse = new GithubClient('jwo')
 
-matt.appendTo('.container')
-jesse.appendTo('.container')
+matt.renderTo('.container')
+jesse.renderTo('.container')
 ```
 
 ## Epic Mode
