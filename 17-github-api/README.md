@@ -25,9 +25,9 @@ You also be able to effectively use:
 
 ## Explorer Mode
 
-1. Create a new project via Source Tree called `18-github-api`. If you don't remember how, [watch this video](https://www.youtube.com/watch?v=Mp3LYUVKoKU).
+1. Create a new project via Source Tree called `17-github-api`. If you don't remember how, [watch this video](https://www.youtube.com/watch?v=Mp3LYUVKoKU).
 
-2. In your `18-github-api` directory run `startfrom tiy-lr-fee/assignments 18-github-api` to download the boilerplate.
+2. In your `17-github-api` directory run `startfrom tiy-lr-fee/assignments 17-github-api` to download the boilerplate.
 
 3. Recreate the HTML and CSS for the repository tab of the GitHub profile page (https://github.com/jbarket?tab=repositories).
 
@@ -52,8 +52,8 @@ Create a `GithubClient` class that implements all the functionality from Explore
 var matt = new GithubClient('matthiasak')
 var jesse = new GithubClient('jwo')
 
-matt.renderTo('.container')
-jesse.renderTo('.container')
+matt.appendTo('.container')
+jesse.appendTo('.container')
 ```
 
 ## Epic Mode

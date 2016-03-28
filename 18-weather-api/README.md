@@ -22,21 +22,23 @@ You should also be able to effectively use:
 
 ## Explorer Mode
 
-1. Create a new project in Source Tree called `19-weather-app`, then download the [Sass Boilerplate](https://github.com/TIY-LR-FEE/curriculum/raw/master/Boilerplates/sass.zip) and put those files in your project.
+1. Create a new project via Source Tree called `18-weather-app`. If you don't remember how, [watch this video](https://www.youtube.com/watch?v=Mp3LYUVKoKU).
 
-2. You'll need to register an account to get an API key from  [forecast.io](https://developer.forecast.io/).
+2. In your `18-weather-app` directory run `startfrom tiy-lr-fee/assignments 18-weather-app` to download the boilerplate.
 
-3. Recreate the following layout in HTML and CSS:
+3. You'll need to register an account to get an API key from  [forecast.io](https://developer.forecast.io/).
+
+4. Recreate the following layout in HTML and CSS:
   ![](https://raw.githubusercontent.com/TIY-LR-FEE/assignments/master/19-weather-api/weather.png)
 
-4. Use `navigator.geolocation` to get the user's latitude and longitude. You can [read more about that at MDN](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation).
+5. Use `navigator.geolocation` to get the user's latitude and longitude. You can [read more about that at MDN](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation).
 
-5. Make an API call to forecast.io with that latitude and longitude, as well as your API key in the format:
+6. Make an API call to forecast.io with that latitude and longitude, as well as your API key in the format:
   - `https://api.forecast.io/forecast/<api key>/<latitude>,<longitude>`
 
-6. Use the data from the API to display their location, current weather, and the next 7 days of information just like the mockup.
+7. Use the data from the API to display their location, current weather, and the next 7 days of information just like the mockup.
 
-7. Use [Climacons](http://adamwhitcroft.com/climacons/) for the weather icons. You'll have to download the files and put them in your images directory. Set an icon for each of the following `icon` possibilities:
+8. Use [Climacons](http://adamwhitcroft.com/climacons/) for the weather icons. You'll have to download the files and put them in your images directory. Set an icon for each of the following `icon` possibilities:
   * clear-day
   * clear-night
   * rain
