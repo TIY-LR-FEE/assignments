@@ -25,7 +25,7 @@ gulp.task('clean', function () {
 });
 
 gulp.task('sass', function () {
-	return gulp.src(['app/styles/**/*.scss', 'app/styles/**/*.css'])
+	return gulp.src(['app/styles/main.scss', 'app/styles/**/*.css'])
 		.pipe(plugins.concat('main.css'))
 		.pipe(plugins.sass())
 		.pipe(gulp.dest('./dist/styles'))
