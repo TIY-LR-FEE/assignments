@@ -22,33 +22,23 @@ You should also be able to effectively use:
 
 ## Explorer Mode
 
-1. Create a new project via Source Tree called `18-weather-app`. If you don't remember how, [watch this video](https://www.youtube.com/watch?v=Mp3LYUVKoKU).
+1. Create a new project via Source Tree called `18-weather-api`. If you don't remember how, [watch this video](https://www.youtube.com/watch?v=Mp3LYUVKoKU).
 
-2. In your `18-weather-app` directory run `startfrom tiy-lr-fee/assignments 18-weather-app` to download the boilerplate.
+2. In your `18-weather-api` directory run `startfrom tiy-lr-fee/assignments 18-weather-api` to download the boilerplate.
 
-3. You'll need to register an account to get an API key from  [forecast.io](https://developer.forecast.io/).
+3. You'll need to register an account to get an API key from  [openweathermap.org](http://openweathermap.org/api).
 
 4. Recreate the following layout in HTML and CSS:
-  ![](https://raw.githubusercontent.com/TIY-LR-FEE/assignments/master/19-weather-api/weather.png)
+  ![](https://raw.githubusercontent.com/TIY-LR-FEE/assignments/master/18-weather-api/weather.png)
 
-5. Use `navigator.geolocation` to get the user's latitude and longitude. You can [read more about that at MDN](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation).
+5. Use `navigator.geolocation` to get the user's latitude and longitude. You can [read more about that at MDN](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation). Remember to use the `getCurrentPosition` example to get the longtiude and latitude.
 
-6. Make an API call to forecast.io with that latitude and longitude, as well as your API key in the format:
-  - `https://api.forecast.io/forecast/<api key>/<latitude>,<longitude>`
+6. Make an API call to openweathermap.org with that latitude and longitude, as well as your API key in the format:
+  - `http://api.openweathermap.org/data/2.5/forecast/daily?lat=<latitude>&lon=<longitude>&APPID=<API Key>&units=imperial`
 
-7. Use the data from the API to display their location, current weather, and the next 7 days of information just like the mockup.
+7. Use the data from the API to display their location, current weather, and the next 6 days of information just like the mockup. Each day is listed under the `list` array you get back from the API. To convert the `dt` attribute of each day to a Date object, you'll need to multiply it by 1000, then pass it into `new Date` like so: `new Date(list.dt * 1000)`
 
-8. Use [Climacons](http://adamwhitcroft.com/climacons/) for the weather icons. You'll have to download the files and put them in your images directory. Set an icon for each of the following `icon` possibilities:
-  * clear-day
-  * clear-night
-  * rain
-  * snow
-  * sleet
-  * wind
-  * fog
-  * cloudy
-  * partly-cloudy-day
-  * partly-cloudy-night
+8. Set the weather icons by using the information [here on openweathermap.org](http://openweathermap.org/weather-conditions). You'll use the `icon` attribute to grab an image in the format http://openweathermap.org/img/w/<icon attribute here>.png
 
 ## Adventurer Mode
 
@@ -56,9 +46,9 @@ You should also be able to effectively use:
 
 2. When the Weekly button is clicked, the information from Explorer Mode should be displayed below the buttons.
 
-3. When the Hourly button is clicked, instead display an hour by hour forecast for the current day. This information is in the API call you made in Explorer Mode. Visually, it should look similar to Weekly mode, except with hours instead of days of the week.
+3. When the Hourly button is clicked, instead display the forecast in 3 hour blocks for the current day. You'll have to make a new api call to `http://api.openweathermap.org/data/2.5/forecast?lat=<latitude>&lon=<longitude>&APPID=<API Key>&units=imperial` to receive this information. Visually, it should look similar to Weekly mode, except with hours instead of days of the week.
 
-4. When the page first loads, automatically load the Hourly section.
+4. When the page first loads, automatically load the Weekly section.
 
 5. Change the style of the button for the section they're currently on so that they know it's the current state.
 
