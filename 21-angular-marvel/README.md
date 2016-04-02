@@ -28,7 +28,7 @@ You should also be able to effectively use:
 
 2. In your `21-angular-marvel` directory run `startfrom tiy-lr-fee/assignments 21-angular-marvel` to download the boilerplate.
 
-3. Open `app.js` and follow the directions. You'll have to complete information inside both `app.js` and `./modules/Character.js`. Once you've successfully completed all of this, you should be able to view your site and see Captain America's information.
+3. Open `app.js` and follow the directions. Once you've successfully completed all of this, you should be able to view your site and see Captain America's information.
 
 4. Open `index.html`. Above the `div` with `ui-view` on it, add a `nav` that contains links to several other Marvel superheros. Remember we use `ui-sref` to link to different routes in Angular, and that you'll need to pass in the `name` parameter. Clicking these links should change the hero's information on the page.
 
@@ -42,7 +42,7 @@ Things load pretty quickly, but we're just making a single call. If we were maki
 
 1. Add a new div to `index.html` called loading. Use `position: absolute` to pull it above everything else. It should cover the entire page corner to corner. Give it a black background, and set its `opacity` so you can sort of see what's going on behind it, but not really.
 
-2. Add a message about the page loading in big white text to the center of this div. Center it vertically and horizontally. If you don't remember the trick to vertically center anything, here's a hint: `translate: transform(-50%, -50%)`.
+2. Add a message about the page loading in big white text to the center of this div. Center it vertically and horizontally. If you don't remember the trick to vertically center anything, here's a hint: `transform: translate(-50%, -50%)`.
 
 3. By default, give this div a class that hides it. When getData is called on a character, find that div and remove that class. Right before you resolve() your promise, find that div and add the class back. The end result should be that when it starts to load new data, you see it. When it finishes loading it and passes the Promise to Angular, you should no longer see it.
 

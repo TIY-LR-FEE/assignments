@@ -4,8 +4,6 @@ import 'whatwg-fetch';
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 
-import Character from './modules/Character';
-
 var App = angular.module('app', ['ui.router']);
 
 /*
@@ -41,35 +39,40 @@ App.config(config);
   view needs to function (like data from APIs) and
   pass it into the view.
 
-  STEP 1: Go fill out ./modules/Character.js, then
-          come back and finish this one!
 
-  STEP 2: Create a new Character and pass it the name
-          parameter from our route. Remember, parameters
-          are available as properties of the $stateParams
-          object. Save this character to a variable named
-          character.
+  STEP 1: Get the name from $stateParams and assign it
+          to the property name;
 
-  STEP 3: Call character.getData() to make your AJAX
-          request to the Marvel API. Remember, this returns
-          a promise, so you'll need to use .then to get its
-          response.
+  STEP 2: Create a getData() method that uses fetch
+          to call out to http://gateway.marvel.com:80/v1/public/characters?name=<character name here>&apikey=<api key here>
 
-          Once you have its response, bind it to the controller
-          by saying this.data = response
+          You should use .then to grab the initial response
+          and turn it into json. Then, use .then a second time
+          to assign the description, id and image properties to
+          this object.
 
-          With the data bound, tell the template to update itself
-          by calling $scope.$digest()
+          Keep in mind, the image is just like it was in the last
+          assignment. You have to assemble it from the thumbnail
+          object in the response.
 
-  STEP 4: Add placeholder tags in ./views/characters.html for the name,
+  STEP 3: At the end of your getData .then, after you assign your
+          properties, call $scope.$digest()
+
+          This tells Angular that you've updated data and you want
+          the view to refresh accordingly.
+
+  STEP 4: Call this.getData() in your constructor after you set
+          this.name.
+
+  STEP 5: Add placeholder tags in ./views/characters.html for the name,
           description and image properties of your character. Then,
           use angular's {{ }} syntax to bind the values from your
           controller. Remember to use the name you set in the routes
-          for your controller, and that we saved the data inside of
-          the data property.
+          for your controller, and that we saved the data as properties
+          on the controller.
 
           So, if you said "CharacterController as charCtrl" in your
-          routes, you would say {{ charCtrl.data.name }} to get the
+          routes, you would say {{ charCtrl.name }} to get the
           name property.
 */
 

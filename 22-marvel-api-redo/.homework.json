@@ -1,0 +1,16 @@
+{
+    "name": "angular-loading-button",
+    "version": "0.0.1",
+    "title": "Build a loading button with Angular",
+    "description": "Using an angular controller and directive, build a button that becomes disabled when you click on it and changes its text to \"Loading...\" and then returns to its normal state after 4 seconds",
+    "difficultyModes": [
+        "Normal"
+    ],
+    "keywords": [
+        "Angular",
+        "Button",
+        "Controller",
+        "Directive",
+        "JavaScript"
+    ]
+}
