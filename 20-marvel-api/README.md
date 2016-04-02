@@ -23,7 +23,7 @@ After completing this assignment, you should now:
 
 2. In your `20-marvel-api` directory run `startfrom tiy-lr-fee/assignments 20-marvel-api` to download the boilerplate.
 
-3. Sign up for a developer account for the [Marvel API](https://developer.marvel.com).
+3. Sign up for a developer account for the [Marvel API](https://developer.marvel.com). Make sure you add `localhost` to Authorized Referrers. This is on the page that lists your public and private keys.
 
 4. Create a class called `Character` that takes a single parameter called `name`. Add a function called `getData` that should call the following API to get information about this character: `http://gateway.marvel.com:80/v1/public/characters?name=<name here>&apikey=<your key here>`
 
