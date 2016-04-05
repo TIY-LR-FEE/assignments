@@ -1,0 +1,18 @@
+body {
+  font-face: Helvetica;
+  line-height: 1.4; }
+
+.character {
+  vertical-align: top; }
+  .character--image {
+    width: 125px;
+    border: 1px solid #000; }
+  .character td:first-child {
+    padding: 0 1rem 0 0; }
+  .character h1 {
+    margin: 0; }
+  .character p {
+    text-align: justify; }
+  .character--delete {
+    color: crimson;
+    font-size: 1.8rem; }

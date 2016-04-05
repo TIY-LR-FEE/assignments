@@ -35,7 +35,7 @@
 
 */
 
-class EventssController {
+class EventsController {
 
 	constructor($http, $stateParams) {
     this._$http = $http;

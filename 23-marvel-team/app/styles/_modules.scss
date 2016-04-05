@@ -1,0 +1,31 @@
+body {
+  font-face: Helvetica;
+  line-height: 1.4;
+}
+
+.character {
+  vertical-align: top;
+
+  &--image {
+    width: 125px;
+    border: 1px solid #000;
+  }
+
+  td:first-child {
+    padding: 0 1rem 0 0;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  &--delete {
+    color: crimson;
+    font-size: 1.8rem;
+  }
+
+}
