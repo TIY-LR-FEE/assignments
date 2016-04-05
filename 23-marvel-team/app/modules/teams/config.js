@@ -15,11 +15,6 @@
           we use require() to include templates!
 */
 function config($stateProvider) {
-  $stateProvider.state('new_team', {
-    url: '/teams/new',
-    controller: 'TeamsController as teamsCtrl',
-    template: require('./view.html')
-  });
 }
 
 export default config;

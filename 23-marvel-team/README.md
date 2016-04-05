@@ -37,9 +37,11 @@ You should also be able to effectively use:
 
   ![](https://raw.githubusercontent.com/TIY-LR-FEE/assignments/master/23-marvel-team/team.png)
 
-7. The red X on the side should call the characterDelete function in your controller.
+7. Your add button should call addCharacter.
 
-8. You should only be able to add _six_ characters. It should show how many they've added, and when they've added six, it should hide the form. If they delete one, it should show the form again.
+8. The red X on the side should call deleteCharacter.
+
+9. You should only be able to add _six_ characters. It should show how many they've added, and when they've added six, it should hide the form. If they delete one, it should show the form again.
 
 ## Adventurer Mode
 
