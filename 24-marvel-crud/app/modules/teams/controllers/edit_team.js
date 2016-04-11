@@ -42,23 +42,15 @@
 */
 
 class EditTeamController {
-
-	constructor($http, $stateParams) {
-    this._$http = $http;
-
-
-    this.getData();
+    constructor($http, $stateParams) {
+        this._$http = $http;
+        this.getData();
 	}
 
-  getData() {
-  }
-
-  addCharacter() {
-  }
-
-  deleteCharacter(hero) {
-  }
+    getData() {
+    }
 
 }
 
 export default EditTeamController
+
