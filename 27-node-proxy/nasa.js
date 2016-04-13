@@ -1,4 +1,5 @@
 import http from 'http';
+import httpProxy from 'http-proxy';
 import url from 'url';
 
 let proxy = httpProxy.createProxyServer({});
