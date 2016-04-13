@@ -23,9 +23,8 @@ let server = http.createServer(function(req, res) {
      *
      *    This is how we apply the changes we made
      *
-     * 4. You should be able to run npm run nasa and visit localhost:8000
-     *    in your browser. At /planetary/apod you should see data for the
-     *    Astronomy Picture of the Day.
+     * 4. You should be able to run npm run weather and visit localhost:8000
+     *    in your browser.
      */
 
     proxy.web(req, res, {
