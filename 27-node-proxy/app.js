@@ -18,7 +18,7 @@ let server = http.createServer(function(req, res) {
    * 2. If they're looking at /other then use req.write() to
    *    send a message explaining that they're on the other page.
    *
-   * 3. Remember to use res.end() after you're done using req.write()
+   * 3. Remember to use res.end() after you're done using res.write()
    *    so that you actually send a response to the browser.
    *
    * 4. You should be able to run npm run app and visit localhost:8000
