@@ -1,7 +1,6 @@
 class UserService {
   constructor($q, $firebaseAuth) {
     this._$q = $q;
-    this._$firebaseObject = $firebaseObject;
 
     /* STEP 1 - ADD YOUR URL HERE */
     this.ref = new Firebase("your firebase url");
