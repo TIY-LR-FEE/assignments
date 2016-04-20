@@ -1,4 +1,4 @@
-Now that we know how to use Services and auth with Firebase, let's create a full authentication solution. Users will be able to register, login and view their profile.
+You've created a full authentication solution with Firebase. Let's build on that work to make an actual app where users can manage their movie collection.
 
 ## What to Submit
 
@@ -12,42 +12,28 @@ Now that we know how to use Services and auth with Firebase, let's create a full
 
 ## Explorer Mode
 
-1. Create a new project via Source Tree called `30-register-login`. If you don't remember how, [watch this video](https://www.youtube.com/watch?v=Mp3LYUVKoKU).
+1. Create a new project via Source Tree called `31-a-real-app`. If you don't remember how, [watch this video](https://www.youtube.com/watch?v=Mp3LYUVKoKU).
 
-2. In your `30-register-login` directory run `startfrom tiy-lr-fee/assignments 30-register-login` to download the boilerplate.
+2. YOU MUST HAVE COMPLETED 30-register-login TO DO THIS. You're going to use `startfrom` to start from your _own_ previous project. In your `31-a-real-app` directory run `startfrom <your GitHub link here>` to download the boilerplate. You can get your GitHub link by going to your GitHub repo and copying the URL near where it says HTTPS.
 
-3. Login to your Firebase and create a new app for this project. Remember, the URL for that app is your Firebase ref. Open that app and click 'Login & Auth' on the side. Choose Email & Password and enable it
+3. Create a new module called `locations`. It'll need all of the usual files, including a service. You should only need one controller. Put some sample text in your view and verify that it works before you continue.
 
-4. Open `config.js` and create the routes for this application.
+4. Open your location controller and add the code from the profile controller that detects if the user is logged in or not.
 
-6. Open `index.js` and glue everything together. You should be importing three controllers and a service
+5. In your view for `locations`, add a form that takes address, city and state as three separate fields. Save that information to Firebase. This should work very similarly to the Firebase todo app.
 
-7. Open `service.js` and complete it. There are several things in there that send you to the Firebase docs. The link is https://www.firebase.com/docs/web/libraries/angular/api.html
+6. Install ngmap by running `npm install ngmap`, then open `app.js` and include it. You'll need to import it, then add `ngMap` to your App module's dependencies.
 
-8. Open `controllers/register.js` and complete it.
+7. Put ngmap on your `locations` view under your form. Center the map on your current location, then add markers for each of your locations.
 
-9. Open `views/register.html` and create your register view. It should have a field for email and password, and a button to register. The button should call the register function in your controller. There should be a button that links to the Login page as well.
-
-10. Open `controllers/profile.js` and complete it
-
-11. Open `views/profile.html` and create your profile view. It should display the user's email, as well as a button to Logout. The logout button should call the logout function in the controller when clicked.
-
-12. Open `controllers/login.js` and complete it
-
-13. Open `views/login.html` and create your login view. It should look very similar to the register view, except that the button should say Login instead of Register and it should call the login function on the controller. There should be a button that links to the Register page as well.
+8. Style it!
 
 ## Adventurer Mode
 
-We don't have much information for the user at the moment. Let's add a new view/controller to solve this.
+Let's add some information about the locations. Update your form to take a name and a description for each location. Then, create a property 'currentLocation' in your controller. On the page, below the map, show the name and description for currentLocation.
 
-1. Create a new view/controller to allow them to edit their profile. The url should be /profile/edit
-
-2. Display a form that takes First Name, Last Name and a few other user profile fields.
-
-3. Use $firebaseObject to wire this information up. You should be storing it at users -> user id here -> profile in Firebase. This is very similar to yesterday's assignment. Put this in the service.
-
-4. Show the new information on the profile page. Add a button to take you to the edit profile page. The edit profile page should kick you back to the login page if you aren't logged in, just like the profile page does.
+Finally, we need a way to set the current location. You might be thinking we can just an an ng-click to your markers and pass the location we're looping over into a function. That's pretty close, but ngmap has its own event system, so instead of ng-click, we need to use on-click.
 
 ## Epic Mode
 
-Now you can register and edit profile information, but you should really be able to do it all in one go. Update your Register form to take a few of your profile fields. When the user registers, complete registration as normal, log them in as normal, then update their profile information with the information you were sent, all in one go.
+Nothing yet!
