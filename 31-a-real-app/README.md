@@ -30,9 +30,11 @@ You've created a full authentication solution with Firebase. Let's build on that
 
 ## Adventurer Mode
 
-Let's add some information about the locations. Update your form to take a name and a description for each location. Then, create a property 'currentLocation' in your controller. On the page, below the map, show the name and description for currentLocation.
+We've created a simple map with ngmap, but you'll often have to create them by hand. Create a stand alone HTML file that contains everything required to make a simple Google map. It should have an style tag and a script tag that contain what you need to make them work. You'll be doing this outside of Gulp and everything else, so no fancy tools to help.
 
-Finally, we need a way to set the current location. You might be thinking we can just an an ng-click to your markers and pass the location we're looping over into a function. That's pretty close, but ngmap has its own event system, so instead of ng-click, we need to use on-click.
+Create a map that centers on the user's current location using geolocation. Add markers for landmarks in the area (by hand). Here's a trick to get coordinates from the real Google maps so you can easily find them without geocoding: https://www.google.com/search?q=get+coordinates+from+google+maps&oq=get+coordinates+from+google+maps&aqs=chrome.0.0l6.2871j0j1&sourceid=chrome&ie=UTF-8
+
+Add info windows with simple information about the landmarks, and set it up so that the info windows toggle when you click on the markers.
 
 ## Epic Mode
 
