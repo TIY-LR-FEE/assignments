@@ -18,16 +18,16 @@ It's been a while since we did anything with media queries. Let's revisit them t
 
 3. Build the following version of the site without using media queries. This is intended for phones, so you'll need to test in a very small browser window, or using Chrome's responsive tools on an iPhone device. It should look good for devices up to 649px.
 
-  ![](https://raw.githubusercontent.com/TIY-LR-FEE/assignments/master/23-rwd-revisit/phone.png)
-  ![](https://raw.githubusercontent.com/TIY-LR-FEE/assignments/master/23-rwd-revisit/phone-bottom.png)
+  ![](https://raw.githubusercontent.com/TIY-LR-FEE/assignments/master/32-rwd-revisit/phone.png)
+  ![](https://raw.githubusercontent.com/TIY-LR-FEE/assignments/master/32-rwd-revisit/phone-bottom.png)
 
 4. Add media queries for a min-width of 650px to make the design look like the following. It should expand to fill the edges of the browser as best as possible.
 
-  ![](https://raw.githubusercontent.com/TIY-LR-FEE/assignments/master/23-rwd-revisit/medium.png)
+  ![](https://raw.githubusercontent.com/TIY-LR-FEE/assignments/master/32-rwd-revisit/medium.png)
 
 5. Add media queries for a min-width of 1024px to make the design look like the following. It should have a fixed width at this point to prevent it from becoming too wide on large screens.
 
-  ![](https://raw.githubusercontent.com/TIY-LR-FEE/assignments/master/23-rwd-revisit/large.png)
+  ![](https://raw.githubusercontent.com/TIY-LR-FEE/assignments/master/32-rwd-revisit/large.png)
 
 
 ## Adventurer Mode
